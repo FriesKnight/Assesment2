@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Page 3</title>
+</head>
+<body>
+  <div class="container">
+    <h1>MULAH</h1>
+    <h2>User Profile</h2>
+    <h5>Thanks for signing up!</h5>
+    <hr>
+    <p id="phoneDisplay"></p>
+    <p id="nameDisplay"></p>
+    <p id="emailDisplay"></p>
+    <p id="birthdayDisplay"></p>
+    <hr>
+    <center><footer>Powered by <a href="https://www.mulahrewards.com">MulahRewards.com</a> Designed by Jonathan Juining</footer></center>
+  </div>
+ 
+
+  <script src="script.js"></script>
+  <script>
+    // Extract parameters from the URL
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const birthday = params.get('birthday');
+    const email = params.get('email');
+
+    // Display data on Page 3
+    document.getElementById('phoneDisplay').innerText = `Phone Number: +60173527250`;
+    document.getElementById('nameDisplay').innerText = `Name: ${name}`;
+    document.getElementById('emailDisplay').innerText = `Email: ${email}`;
+    document.getElementById('birthdayDisplay').innerText = `Birthday: ${birthday}`;
+  </script>
+</body>
+</html>

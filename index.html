@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Page 1</title>
+</head>
+<body>
+  <div class="container">
+    <h1>MULAH</h1>
+    <H2>Hello, <br> Welcome !</H2>
+    <h5>Check your Loyalty Points & Rewards</h5>
+    <div>
+        <select id="nationalCode" required>
+          <option value="+60">+60 (Malaysia)</option>
+          <!-- Drop down menu can add other countries-->
+        </select>
+        <input type="tel" id="phoneNumber" pattern="[0-9]{9,12}" placeholder="Enter Your Number..." required>
+      </div>
+    <center><button onclick="checkLoyaltyPoints()">Check Loyalty Points</button></center>
+    <br><br>
+    <hr>
+    <center><footer>Powered by <a href="https://www.mulahrewards.com">MulahRewards.com</a> Designed by Jonathan Juining</footer></center>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
